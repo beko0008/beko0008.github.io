@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky Hunter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/eagles.css">
+</head>
+<body>
+
+  <!-- header with hero image and title -->
+  <header id="site-header">
+    <img class="cover-img" src="images/eagle-wide.jpg" alt="eagle soaring over mountains">
+    <h1 class="cover-title">Sky Hunter</h1>
+  </header>
+
+  <!-- navigation links -->
+  <nav id="site-nav">
+    <ul class="nav-row">
+      <li class="nav-row__cell"><a class="nav-row__link" href="#main">Home</a></li>
+      <li class="nav-row__cell"><a class="nav-row__link" href="#eagle-facts">Facts</a></li>
+      <li class="nav-row__cell"><a class="nav-row__link" href="#enquiry">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- main page content -->
+  <main id="main">
+
+    <!-- article section -->
+    <section class="article-section">
+      <h2 class="heading">Life of an Eagle</h2>
+      <!-- article image floats left -->
+      <img class="float-img" src="images/eagle.jpg" alt="eagle in flight close up">
+      <p class="txt">
+        Eagles are among the most powerful and awe-inspiring birds on the
+        planet, revered across cultures and civilisations for thousands of
+        years as symbols of strength, freedom, and vision. Belonging to the
+        family Accipitridae, eagles are large birds of prey found on every
+        continent except Antarctica, inhabiting a wide range of environments
+        from dense tropical forests and open grasslands to high mountain
+        ranges and coastal cliffs. There are more than 68 recognised species
+        of eagle, the most well-known of which include the bald eagle, the
+        golden eagle, the harpy eagle, and the Philippine eagle. Eagles are
+        defined by their powerful hooked beaks, strong muscular legs, and
+        sharp curved talons which they use to seize and kill prey with
+        incredible force. Their eyesight is among the sharpest in the animal
+        kingdom — an eagle can spot a rabbit from a distance of over three
+        kilometres, and their eyes are so large relative to their skull that
+        they cannot move them in their sockets, instead turning their entire
+        head to track movement. Eagles are built for soaring; their broad
+        wings generate lift with minimal effort, allowing them to ride thermal
+        currents of warm air high into the sky and cover vast distances while
+        barely flapping. The bald eagle, the national symbol of the United
+        States, was once on the brink of extinction due to hunting and the
+        widespread use of the pesticide DDT, which caused their eggshells to
+        thin and break before hatching. Thanks to conservation efforts and
+        legal protections, bald eagle populations have made a remarkable
+        recovery and the species was removed from the endangered list in 2007.
+        The harpy eagle, found in the rainforests of Central and South
+        America, is considered the most powerful eagle in the world, capable
+        of snatching monkeys and sloths directly from the treetops with its
+        massive talons which can exert a grip force comparable to a large dog
+        bite. Eagles typically mate for life and return to the same nest year
+        after year, adding new material each season until the nest becomes
+        enormous — the largest bald eagle nest on record weighed nearly three
+        tonnes and measured almost three metres across.
+      </p>
+      <p class="txt">
+        Golden eagles are among the most widely distributed eagle species in
+        the world, found across North America, Europe, Asia, and parts of
+        Africa. They are supremely agile hunters capable of diving at speeds
+        exceeding 240 kilometres per hour when pursuing prey, which includes
+        rabbits, hares, ground squirrels, and occasionally young deer or
+        mountain goats. In many parts of Central Asia, golden eagles have
+        been trained by nomadic peoples for centuries to hunt foxes, hares,
+        and even wolves, a tradition known as falconry that continues to this
+        day and is recognised by UNESCO as an intangible cultural heritage.
+      </p>
+    </section>
+
+    <!-- facts section -->
+    <section class="facts-section" id="eagle-facts">
+      <h2 class="heading">Facts About Eagles</h2>
+      <ul class="fact-list">
+        <li class="fact-list__item">Eagles have hollow bones which reduce their weight and make sustained flight much easier despite their large size.</li>
+        <li class="fact-list__item">The Philippine eagle is the largest eagle in the world by length and wingspan and is critically endangered with fewer than 800 individuals remaining.</li>
+        <li class="fact-list__item">An eagle's talon grip is estimated to be ten times stronger than the grip of an average human hand.</li>
+        <li class="fact-list__item">Eagles have two foveae in each eye, giving them both forward and side vision simultaneously with extraordinary clarity.</li>
+        <li class="fact-list__item">Some eagle species can live for up to 30 years in the wild and even longer in captivity.</li>
+      </ul>
+    </section>
+
+    <!-- contact form section -->
+    <section class="form-section" id="enquiry">
+      <h2 class="heading">Contact to learn more</h2>
+      <form class="c-form" action="#" method="post">
+
+        <div class="c-form__group">
+          <label class="c-form__label" for="p-name">Your Name</label>
+          <input class="c-form__input" type="text" id="p-name" name="p-name" placeholder="Enter your full name">
+        </div>
+
+        <div class="c-form__group">
+          <label class="c-form__label" for="p-email">Your Email</label>
+          <input class="c-form__input" type="email" id="p-email" name="p-email" placeholder="Enter your email address">
+        </div>
+
+        <div class="c-form__group">
+          <label class="c-form__label" for="p-msg">Your Message</label>
+          <textarea class="c-form__input c-form__input--area" id="p-msg" name="p-msg" placeholder="Write your message here"></textarea>
+        </div>
+
+        <fieldset class="c-form__radio">
+          <legend class="c-form__label">Would you like to see an eagle up close?</legend>
+          <div class="c-form__radio-row">
+            <label for="r-yes"><input type="radio" id="r-yes" name="eagle-visit" value="yes"> Yes</label>
+            <label for="r-no"><input type="radio" id="r-no" name="eagle-visit" value="no"> No</label>
+            <label for="r-maybe"><input type="radio" id="r-maybe" name="eagle-visit" value="maybe"> Maybe</label>
+          </div>
+        </fieldset>
+
+        <button class="c-form__btn" type="submit">Send</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer id="site-footer">
+    <p>&copy; Sky Hunter.</p>
+  </footer>
+
+</body>
+</html>
